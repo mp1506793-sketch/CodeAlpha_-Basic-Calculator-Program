@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+int main ()
+{ 
+    int x,y,add,ssub,mult,div,choice;
+    clrscr();
+    printf(" \n The options are :\n");
+    printf( " \n (1)Addition \n(2)Subtraction \n(3) Multiplication \n (4)Division
+        ");
+        printf( "\n Enter your choice (1/2/3/4)?");
+        scanf(" %d",&choice);
+        printf("\n Enter any 2 numbers");
+        scanf("%d%d",&x,&y);
+        switch(choice)
+        { 
+            case 1:
+                   add = x+y ;
+                   printf( " \n Addtion= %d",add);
+                   break;
+            case 2:
+                   sub = x-y ;
+                   printf(" \n Subtraction=%d",sub);
+                   break;
+            case 3:
+                   mult = x*y ;
+                   printf(" \n Multiplication=%d",mult);
+                   break;
+            case 4:
+                   div = x/y ;
+                   printf(" \n Division=%d",div);
+                   break;
+            default :
+                     printf(" \n Wrong choice");
+        }
+    getch();
+}  
